@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/digitalbox-poll",
+  "version": "0.1.0",
+  "title": "Digitalbox Poll",
+  "category": "common",
+  "icon": "chart-bar",
+  "description": "Embed interactive polls into entertainment news articles.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "poll_id": {
+      "type": "string",
+      "default": ""
+    },
+    "question": {
+      "type": "string",
+      "default": "Who will win Best Actor?"
+    },
+    "answers": {
+      "type": "array",
+      "default": []
+    },
+    "expiry": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "digitalbox-poll",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": [
+    "file:./view.js",
+    "wp-api"
+  ],
+  "render": "file:./../../templates/render.php"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "digitalbox-poll",
+    "version": "0.1.0",
+    "description": "Digitalbox Poll Build Tools",
+    "author": "Sukhy",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "wp-scripts build",
+        "format": "wp-scripts format && prettier --write **/*.php --ignore-path .prettierrcignore",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js",
+        "packages-update": "wp-scripts packages-update",
+        "plugin-zip": "wp-scripts plugin-zip",
+        "start": "wp-scripts start"
+    },
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.22.4",
+        "@wordpress/scripts": "^30.12.0",
+        "prettier": "^3.5.2"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "moment": "^2.30.1"
+    }
+}
